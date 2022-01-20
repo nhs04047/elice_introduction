@@ -28,3 +28,14 @@ video{
     overflow: hidden;
     background-color: rgba(0,0,0,0.4);
 }
+.banner_text > h3{
+    color:rgba(255,255,255,0.9);
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+.banner_text > p{
+    margin-top:20px;
+    font-size: 20px;
+    color:rgba(255,255,255,0.7);;
+    text-align: center;
+}
