@@ -20,8 +20,8 @@ video{
     position: absolute;
     top: 0px;
     left: 0px;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     width: auto;
     height: auto;
     z-index: -1;
@@ -38,4 +38,48 @@ video{
     font-size: 20px;
     color:rgba(255,255,255,0.7);;
     text-align: center;
+}
+
+.main{
+    background-color: white;
+    width:100vw;
+    height: 100vh;
+    padding-top:50px;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.container{
+    margin:0 10vw;
+}
+.ab_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro_img{
+    width: 550px;
+}
+.pro_text{
+    flex:1;
+}
+article h3{
+    margin: 30px 0 10px 0;
+    font-size: 20px;
+}
+article p{
+    margin: 5px 5px 5px 40px;
+    font-size: 13px;
+}
+
+.ab_goal{
+    display: flex;
+}
+.ab_goal > section{
+    flex:1;
+}
+.ab_speak{
+    display: flex;
 }
