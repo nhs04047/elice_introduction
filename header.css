@@ -16,7 +16,7 @@ header{
     display: flex;
     position: fixed;
     width:100%;
-    height:120px;
+    height:100px;
     font-weight:bolder;
     justify-content: space-between;
     
@@ -24,11 +24,16 @@ header{
 
 .logo a {
     position: absolute;
-    top: 40px;
-    left: 66px;
+    top: 35px;
+    left: 58px;
     font-size:22px;
+    line-height: 23px;
     color: white;
-    
+}
+.logo_img{
+    position: relative;
+    width: 200px;
+    height: 130px;
 }
 .nav{
     display: flex;
@@ -41,7 +46,7 @@ header{
 }
 .nav > ul > li{
     display: inline;
-    font-size: 23px;
+    font-size: 19px;
     padding: 0 30px;
 }
 .nav > ul > li > a{
@@ -56,11 +61,7 @@ header{
 
 
 
-.logo_img{
-    position: relative;
-    width: 220px;
-    height: 160px;
-}
+
 
 
 

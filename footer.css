@@ -1,0 +1,30 @@
+footer{
+    background-color: rgb(54, 49, 224);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.link_icon a i{
+    color: white;
+    margin: 17px;
+
+}
+footer > div{
+    width: 33.3333%;
+    text-align: center;
+}
+footer img{
+    width: 150px;
+    height: 120px;
+}
+.img_1{
+    margin:0 0 100px 250px;
+}
+.img_2{
+    margin:100px 200px 0 0;
+}
