@@ -37,7 +37,7 @@
                 <img src="img/nav_logo.png" alt="logo image">
                 <a href="index.html">Kim<br>Bohyeon</a>
             </div>
-            <div class="nav_ham_bar"><i class="fas fa-bars"></i></div>
+            <a href="#Home" class="nav_ham_bar"><i class="fas fa-bars"></i></a></div>
             <nav class="nav">
                 <ul>
                     <li><a href="#Home" class="scroll">Home</a></li>
@@ -122,23 +122,15 @@
     <script>
         window.onscroll = () => {
             const sc_he= document.querySelector('header');
-            if (this.scrollY <= 700){
-                sc_he.className = '';
-            } else{
-                sc_he.className = 'scroll';
-            }
-
             const sc_lo_tx = document.querySelector('.logo a');
-            if (this.scrollY <= 700){
-                sc_lo_tx.className = '';
-            } else{
-                sc_lo_tx.className = 'scroll_lo_tx';
-            }
-
             const sc_lo_img = document.querySelector('.logo img');
-            if (this.scrollY <= 700){
+            if (this.scrollY <= 500){
+                sc_he.className = '';
+                sc_lo_tx.className = '';
                 sc_lo_img.className = '.logo_img';
             } else{
+                sc_he.className = 'scroll';
+                sc_lo_tx.className = 'scroll_lo_tx';
                 sc_lo_img.className = 'scroll_lo_img';
             }
         };

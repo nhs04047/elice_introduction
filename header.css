@@ -86,18 +86,53 @@ header.scroll {
     border-bottom: solid 3px rgb(198, 232, 255);
 }
 .nav_ham_bar{
-position: absolute;
-  right: 32px;
-  top: 24px;
-  font-size: 24px;
-  display: none;
+    position: absolute;
+    right: 32px;
+    top: 19px;
+    font-size: 24px;
+    display: none;
 }
+.nav_ham_bar > i{
+    color: white;
+}  
 
-@media (min-width:701) and (max-width:1100px){
+@media (max-width:700px){
+    .nav_ham_bar{
+        display: block;
+    }
+    .nav > ul > li{
+        display: none;
+    }
+    .logo a {
+        position: absolute;
+        top: 20px;
+        left: 37px;
+        font-size:13px;
+        line-height: 15px;
+        color: white;
+    
+        transition: top left line-height font-size 0.4s linear;
+    }
+    .logo img{
+        position: relative;
+        width: 130px;
+        height: 80px;
+    
+        transition: width height 0.4s linear;
+    }
 
+    header.scroll {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 50px;
+      }
+
+      .nav_ham_bar{
+        top: 8px;
+    }
+    .logo .scroll_lo_tx{
+        top: 12px;
+        line-height: 14px;
 }
-
-
 
 
 
