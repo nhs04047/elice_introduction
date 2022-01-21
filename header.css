@@ -28,6 +28,9 @@ header{
     transition: background-color height  ease-out;
     
 }
+
+/*      상단 아이콘       */
+
 header.scroll {
     background-color: rgba(0, 0, 0, 0.7);
     height: 70px;
@@ -40,6 +43,7 @@ header.scroll {
     font-size:19px;
     line-height: 20px;
     color: white;
+    
 
     transition: top left line-height font-size 0.4s linear;
 }
@@ -62,6 +66,9 @@ header.scroll {
     height: 70px;
     display: none;
 }
+
+/*     nav       */
+
 .nav{
     display: flex;
     align-items: center;
@@ -80,10 +87,11 @@ header.scroll {
     color: white;
     border:none;
     padding-bottom: 5px;
+    text-shadow: 3px 3px 2px rgb(54, 54, 54);
 }
 .nav > ul > li > a:hover{
     color: rgb(201, 234, 250);
-    border-bottom: solid 3px rgb(198, 232, 255);
+    border-bottom: solid 2px rgb(198, 232, 255);
 }
 .nav_ham_bar{
     position: absolute;
