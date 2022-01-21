@@ -19,21 +19,44 @@ header{
     height:100px;
     font-weight:bolder;
     justify-content: space-between;
+    font-size:19px;
+
+    transition: background-color height  ease-out;
     
 }
+header.scroll {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 70px;
+  }
 
 .logo a {
     position: absolute;
-    top: 35px;
-    left: 58px;
-    font-size:22px;
-    line-height: 23px;
+    top: 30px;
+    left: 55px;
+    font-size:19px;
+    line-height: 20px;
     color: white;
+
+    transition: top left line-height font-size 0.4s linear;
 }
-.logo_img{
+.logo .scroll_lo_tx{
+    top: 20px;
+    left: 30px;
+    font-size:11px;
+    line-height: 15px;
+}
+.logo img{
     position: relative;
-    width: 200px;
-    height: 130px;
+    width: 180px;
+    height: 110px;
+
+    transition: width height 0.4s linear;
+}
+.logo .scroll_lo_img{
+    position: relative;
+    width: 100px;
+    height: 70px;
+    display: none;
 }
 .nav{
     display: flex;
@@ -46,8 +69,8 @@ header{
 }
 .nav > ul > li{
     display: inline;
-    font-size: 19px;
-    padding: 0 30px;
+    font-size: 15px;
+    padding: 0 25px;
 }
 .nav > ul > li > a{
     color: white;
@@ -56,7 +79,7 @@ header{
 }
 .nav > ul > li > a:hover{
     color: rgb(201, 234, 250);
-    border-bottom: solid 5px rgb(198, 232, 255);
+    border-bottom: solid 3px rgb(198, 232, 255);
 }
 
 

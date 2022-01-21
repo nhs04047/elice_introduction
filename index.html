@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="footer.css">
 
 
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -29,10 +31,10 @@
 
 <body>
     <div id="wrap">
-        <header class>
+        <header>
             <div class="logo">
-                <img src="img/nav_logo.png" class="logo_img" alt>
-                <a href="index.html" class="logo">Kim<br>Bohyeon</a>
+                <img src="img/nav_logo.png" alt="logo image">
+                <a href="index.html">Kim<br>Bohyeon</a>
             </div>
             <nav class="nav">
                 <ul>
@@ -61,6 +63,7 @@
                 </section>
             </div>
             <div class="main">
+
                 <div class="container">
                     <h3 class="heading">About</h3>
                     <section class="ab_profile">
@@ -101,9 +104,35 @@
                     <a href="https://jangbageum.tistory.com/"><i class="fas fa-blog fa-3x"></i></a>
                 </section>
             </div>
-            <div><img src="img/2.png" class="img_2"alt=""></div>
+            <div><img src="img/2.png" class="img_2" alt=""></div>
         </footer>
     </div>
+
+    <script>
+        window.onscroll = () => {
+            const sc_he= document.querySelector('header');
+            if (this.scrollY <= 700){
+                sc_he.className = '';
+            } else{
+                sc_he.className = 'scroll';
+            }
+
+            const sc_lo_tx = document.querySelector('.logo a');
+            if (this.scrollY <= 700){
+                sc_lo_tx.className = '';
+            } else{
+                sc_lo_tx.className = 'scroll_lo_tx';
+            }
+
+            const sc_lo_img = document.querySelector('.logo img');
+            if (this.scrollY <= 700){
+                sc_lo_img.className = '.logo_img';
+            } else{
+                sc_lo_img.className = 'scroll_lo_img';
+            }
+        };
+    </script>
+
 </body>
 
 </html>
