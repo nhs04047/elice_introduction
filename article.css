@@ -64,7 +64,7 @@ video{
 }
 .ab_profile{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .pro_img{
