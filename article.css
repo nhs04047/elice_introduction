@@ -1,20 +1,30 @@
+
 .banner{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image: none;
 }
+/* .vi_container{
+    position:relative;
+    align-items: center;
+    height: 100vh;
+   
+    
+} */
 
 video{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    min-width: 100%;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    overflow: hidden;
+   
+
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
 }
 .on_vi{
     position: absolute;
@@ -28,10 +38,14 @@ video{
     overflow: hidden;
     background-color: rgba(0,0,0,0.4);
 }
+.me_banner_back_img{
+    display: none;
+}
 .banner_text > h2{
     color:rgba(255,255,255,0.9);
     font-size: 50px;
     padding-bottom: 20px;
+    text-align: center;
     font-family: 'Lobster', cursive;
 }
 .banner_text > h5{
@@ -93,4 +107,57 @@ article p{
 }
 .ab_speak{
     display: flex;
+}
+
+
+
+
+@media (min-width:701px) and (max-width:1100px){
+    
+    article h3{
+        margin: 30px 0 10px 0;
+        font-size: 20px;
+    }
+    article p{
+        margin: 5px 5px 5px 40px;
+        font-size: 13px;
+    }
+    .banner_text > h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .banner_text > h5{
+        margin-top:20px;
+        font-size: 13px;
+
+    }
+}
+
+
+@media (max-width:700px){
+    video{
+        display: none;
+    }
+    .on_vi{
+        display: none;
+    }
+    .banner{
+        background: url("img/background_vi_img.png") no-repeat center center/cover, rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        height: 100vh;
+        background-position: center;
+    }
+    .banner_text > h2{
+        font-size: 30px;
+        margin: 0 17px;
+        padding-bottom: 20px;
+    }
+    .banner_text > h5{
+        margin: 0 50px;
+        font-size: 14px;
+
+    }
+    
+    
+
 }
