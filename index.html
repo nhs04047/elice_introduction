@@ -37,7 +37,7 @@
                 <img src="img/nav_logo.png" alt="logo image">
                 <a href="index.html">Kim<br>Bohyeon</a>
             </div>
-            <a href="#Home" class="nav_ham_bar"><i class="fas fa-bars"></i></a></div>
+            <a href="#Home" class="nav_ham_bar"><i class="fas fa-bars"></i></a>
             <nav class="nav">
                 <ul>
                     <li><a href="#Home" class="scroll">Home</a></li>
@@ -52,16 +52,16 @@
         <article>
             <div class="banner" id="Home">
 
-                
-                   
-                        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-                            <source src="img/background_vi.mp4" type="video/ogg" poster="img/background_vi_img.png">
-                            <source src="img/background_vi.ogg" type="video/ogg" poster="img/background_vi_img.png">
-                            미지원 브라우저 버전
-                        </video>
-                   
-                    <div class="on_vi"></div>
-                
+
+
+                <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                    <source src="img/background_vi.mp4" type="video/ogg" poster="img/background_vi_img.png">
+                    <source src="img/background_vi.ogg" type="video/ogg" poster="img/background_vi_img.png">
+                    미지원 브라우저 버전
+                </video>
+
+                <div class="on_vi"></div>
+
                 <section class="banner_text">
                     <h2>"A smooth sea never made a skilled sailor"</h2>
                     <h5>안녕하세요. 병아리 개발자 김보현입니다.
@@ -75,12 +75,14 @@
                     <section class="ab_profile">
                         <img src="img/pro_img.png" class="pro_img" alt="profile image">
                         <div class="pro_text">
-                            <h3>🤗 Profile</h3>
-                            <p>- 김보현</p>
-                            <p>- 1997.02.22</p>
-                            <p>- 충청남도</p>
-                            <p>- nhs04047@gmail.com</p>
-                            <p>- 영화보기 </p>
+                            <section>
+                                <h3>🤗 Profile</h3>
+                                <p>- 김보현</p>
+                                <p>- 1997.02.22</p>
+                                <p>- 충청남도</p>
+                                <p>- nhs04047@gmail.com</p>
+                                <p>- 영화보기 </p>
+                            </section>
                             <section>
                                 <h3>&#128640 앞으로의 목표 </h3>
                                 <p>- 진로 확실히 정하기!</p>
@@ -116,19 +118,19 @@
     </div>
 
 
-    
+
 
 
     <script>
         window.onscroll = () => {
-            const sc_he= document.querySelector('header');
+            const sc_he = document.querySelector('header');
             const sc_lo_tx = document.querySelector('.logo a');
             const sc_lo_img = document.querySelector('.logo img');
-            if (this.scrollY <= 500){
+            if (this.scrollY <= 500) {
                 sc_he.className = '';
                 sc_lo_tx.className = '';
                 sc_lo_img.className = '.logo_img';
-            } else{
+            } else {
                 sc_he.className = 'scroll';
                 sc_lo_tx.className = 'scroll_lo_tx';
                 sc_lo_img.className = 'scroll_lo_img';
