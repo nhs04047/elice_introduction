@@ -33,7 +33,7 @@ header{
 
 header.scroll {
     background-color: rgba(0, 0, 0, 0.7);
-    height: 70px;
+    height: 50px;
   }
 
 .logo a {
@@ -48,7 +48,7 @@ header.scroll {
     transition: top left line-height font-size 0.4s linear;
 }
 .logo .scroll_lo_tx{
-    top: 20px;
+    top: 10px;
     left: 30px;
     font-size:11px;
     line-height: 15px;
