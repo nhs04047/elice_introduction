@@ -33,5 +33,5 @@ p{
 }
 
 .home_btn{
-    display: inline;
+    display: flex;
 }
